@@ -4,7 +4,7 @@
 	branch = auto
 [user]
 	name = Xiao Ba
-	email = bbxiao1@gmail.com
+	email =
 [alias]
 	st = status
 	br = branch
@@ -15,9 +15,3 @@
 	default = tracking
 [core]
 	excludesfile = /Users/xiaoba/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
