@@ -9,5 +9,6 @@
   "theme": "Gravity.sublime-theme",
   "color_scheme": "Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme",
   "font_face": "Monaco",
-  "highlight_color_blue": true
+  "highlight_color_blue": true,
+  "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "node_modules"]
 }

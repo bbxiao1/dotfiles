@@ -9,6 +9,6 @@ alias wd='cd ~/code/cdd/ruby/'
 source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
 source `brew --prefix git`/etc/bash_completion.d/git-prompt.sh
 
-PS1='\h:\W$(__git_ps1 "(%s)") \u\$ '
+export PS1='\[\e[0;36m\]\t \w ->\n\[\e[1;32m\]$(__git_ps1 "(%s)") \$ \e[0m'
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
