@@ -3,8 +3,9 @@ export LD_LIBRARY_PATH=/usr/local/lib
 export PATH=/usr/local/bin:./bin:~/bin:/usr/local/sbin:$PATH
 
 alias ls='ls -G'
+alias g='git'
+alias rubyserve='ruby -run -e httpd . -p 9090'
 
-alias wd='cd ~/code/cdd/ruby/'
 
 source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
 source `brew --prefix git`/etc/bash_completion.d/git-prompt.sh
