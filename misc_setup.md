@@ -21,3 +21,12 @@ Vendor gems ```bundle config path vendor/bundle```
     ```
 
 Set ruby version ```rbenv local <version-number>```
+
+# Scala
+## SBT
+```
+brew install sbt
+```
+Sublime ENSIME
+  * http://ensime.github.io/editors/sublime/installation/
+Setting scalaVersion in global.sbt will lead to a bad time
