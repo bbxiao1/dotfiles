@@ -59,14 +59,6 @@ set gdefault
 " incremental searching
 set incsearch
 
-" persistent? highlighted search
-set hlsearch
-" remove highlighting via ',<space>'
-nnoremap <leader><space> :noh<cr>
-
-" match bracket pairs - jumps to them?
-nnoremap <tab> %
-
 " show vertical line @ column 85
 set colorcolumn=85
 
@@ -77,6 +69,14 @@ set listchars=tab:▸\ ,eol:¬
 "highlight NonText guifg=#4a4a59
 "highlight SpecialKey guifg=#4a4a59
 
+"
+"
+" Vim Plug stuff
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'ctrlpvim/ctrlp.vim'
+call plug#end()
+"
 " Disabled arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -102,3 +102,12 @@ nnoremap <leader>w <C-w>v<C-w>l
 " TODO: use non-black background
 colors molokai
 syntax on
+
+" persistent? highlighted search
+set hlsearch
+" remove highlighting via ',<space>'
+nnoremap <leader><space> :noh<cr>
+
+" match bracket pairs - jumps to them?
+nnoremap <tab> %
+
