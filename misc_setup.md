@@ -30,3 +30,7 @@ brew install sbt
 Sublime ENSIME
   * http://ensime.github.io/editors/sublime/installation/
 Setting scalaVersion in global.sbt will lead to a bad time
+
+# Chromebook
+## Misc
+use ```prefs.js``` gist so Solarized vim theme plays nice with SecureShell

@@ -99,10 +99,9 @@ inoremap jj <Esc>:w<CR>
 " create new vertical split and focus
 nnoremap <leader>w <C-w>v<C-w>l
 
-" TODO: use non-black background
-colors molokai
-syntax on
-
+syntax enable
+set background=light
+colorscheme solarized
 " persistent? highlighted search
 set hlsearch
 " remove highlighting via ',<space>'
@@ -111,3 +110,5 @@ nnoremap <leader><space> :noh<cr>
 " match bracket pairs - jumps to them?
 nnoremap <tab> %
 
+" CtrlP plugin
+nnoremap <leader>o :CtrlP<CR>
