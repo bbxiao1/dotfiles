@@ -75,6 +75,7 @@ set listchars=tab:▸\ ,eol:¬
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 "
 " Disabled arrow keys
@@ -112,3 +113,6 @@ nnoremap <tab> %
 
 " CtrlP plugin
 nnoremap <leader>o :CtrlP<CR>
+
+" lightline
+let g:lightline={'colorscheme': 'solarized'}
