@@ -5,6 +5,7 @@ export PATH=/usr/local/bin:./bin:~/bin:/usr/local/sbin:$PATH
 alias ls='ls -G'
 alias g='git'
 alias rubyserve='ruby -run -e httpd . -p 9090'
+alias be='bundle exec'
 
 
 source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
