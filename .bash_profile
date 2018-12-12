@@ -7,7 +7,6 @@ alias g='git'
 alias rubyserve='ruby -run -e httpd . -p 9090'
 alias be='bundle exec'
 
-
 source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
 source `brew --prefix git`/etc/bash_completion.d/git-prompt.sh
 
@@ -31,3 +30,7 @@ export FZF_DEFAULT_OPTS='
   --color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108
   --color info:108,prompt:109,spinner:108,pointer:168,marker:168
   '
+
+# opam configuration
+test -r /Users/xiaoba/.opam/opam-init/init.sh && . /Users/xiaoba/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+eval `opam config env`
