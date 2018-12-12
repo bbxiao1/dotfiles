@@ -1,14 +1,18 @@
 {
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"node_modules"
+	],
+	"font_face": "Monaco",
 	"ignored_packages":
 	[
 		"Vintage"
 	],
 	"save_on_focus_lost": true,
 	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
-  "theme": "Gravity.sublime-theme",
-  "color_scheme": "Packages/Theme - Gravity/Monokai Gravity (SL).tmTheme",
-  "font_face": "Monaco",
-  "highlight_color_blue": true,
-  "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "node_modules"]
+	"translate_tabs_to_spaces": true
 }
