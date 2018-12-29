@@ -10,13 +10,20 @@ alias be='bundle exec'
 source `brew --prefix git`/etc/bash_completion.d/git-completion.bash
 source `brew --prefix git`/etc/bash_completion.d/git-prompt.sh
 
-export PS1='\[\e[0;36m\]\t \w ->\n\[\e[1;32m\]$(__git_ps1 "(%s)") \$ \e[0m'
+# export PS1='\[\e[0;36m\]\t \w ->\n\[\e[1;32m\]$(__git_ps1 "(%s)") \$ \e[0m'
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWSTASHSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+export GIT_PS1_SHOWUPSTREAM="auto"
+export GIT_PS1_SHOWCOLORHINTS=true
+export PROMPT_COMMAND='__git_ps1 "\w" "\\\$ "'
 # export PATH="$HOME/.rbenv/bin:`yarn global bin`:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:$HOME/go/bin
-eval "$(rbenv init -)"
-eval "$(direnv hook bash)"
+
+[ -d ~/.rbenv ] && eval "$(rbenv init -)"
+[ -x direv ] && eval "$(direnv hook bash)"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
@@ -33,4 +40,5 @@ export FZF_DEFAULT_OPTS='
 
 # opam configuration
 test -r /Users/xiaoba/.opam/opam-init/init.sh && . /Users/xiaoba/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-eval `opam config env`
+[ -x opam ] && eval `opam config env`
+
