@@ -12,6 +12,7 @@
 	co = checkout
 	ci = commit
 	staged = diff --cached
+	pr = pull --rebase
 [push]
 	default = tracking
 [core]
