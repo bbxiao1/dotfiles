@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/blitz/.oh-my-zsh"
+export ZSH="/Users/xiaoba/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -99,11 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+# export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+# source /usr/local/opt/chruby/share/chruby/chruby.sh
+# source /usr/local/opt/chruby/share/chruby/auto.sh
 
 alias rubyserve='ruby -run -e httpd . -p 9090'
 alias xbabox='cd && /usr/local/bin/s3fs xbabox xbabox -o passwd_file=/Users/blitz/.passwd-s3fs -o use_cache=/tmp && cd -'
