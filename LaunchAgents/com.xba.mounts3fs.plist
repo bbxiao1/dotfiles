@@ -5,7 +5,7 @@
   <key>Label</key>
   <string>com.xba.mounts3fs</string>
   <key>Program</key>
-  <string>/Users/blitz/mount-s3fs.sh</string>
+  <string>/Users/xiaoba/mount-s3fs.sh</string>
   <key>RunAtLoad</key>
   <true/>
 </dict>

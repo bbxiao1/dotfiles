@@ -106,7 +106,7 @@ export PATH="$HOME/.emacs.d/bin:$PATH"
 # source /usr/local/opt/chruby/share/chruby/auto.sh
 
 alias rubyserve='ruby -run -e httpd . -p 9090'
-alias xbabox='cd && /usr/local/bin/s3fs xbabox xbabox -o passwd_file=/Users/blitz/.passwd-s3fs -o use_cache=/tmp && cd -'
+alias xbabox='cd && /usr/local/bin/s3fs xbabox xbabox -o passwd_file=/Users/xiaoba/.passwd-s3fs -o use_cache=/tmp && cd -'
 
 function gpp() {
   output=$1:t:r
