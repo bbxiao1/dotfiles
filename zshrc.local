@@ -97,9 +97,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
+
 export PATH="$HOME/.local/bin:$PATH"
-# export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
 # source /usr/local/opt/chruby/share/chruby/chruby.sh
@@ -112,3 +111,15 @@ function gpp() {
   output=$1:t:r
   g++ -std=c++11 $1 -o $output.out
 }
+export PATH="/usr/local/opt/node@14/bin:$PATH"
+
+# JAVA_HOME
+. ~/.asdf/plugins/java/set-java-home.zsh
+
+# emacs
+alias em="emacsclient -c -n -a ''"
+
+eval "$(direnv hook zsh)"
+eval "$(ssh-agent -s)"
+
+. /usr/local/opt/asdf/asdf.sh
